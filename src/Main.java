@@ -1,15 +1,15 @@
 public class Main {
     public static void main(String[] args) {
-        int CurrentBalance = 100;
-        int TopUp = 1_100;
-        int Bonus;
-        if (TopUp >= 1_100) {
-            Bonus = TopUp / 100;
+        int currentBalance = 100;
+        int topUp = 1_100;
+        int bonus;
+        if (topUp > 1_000) {
+            bonus = topUp / 100;
         } else {
-            Bonus = 0;
+            bonus = 0;
         }
-        CurrentBalance = CurrentBalance + TopUp + Bonus;
-        System.out.println("Итоговый бонус: " + Bonus);
-        System.out.println("Текущий баланс: " + CurrentBalance);
+        currentBalance = currentBalance + topUp + bonus;
+        System.out.println("Итоговый бонус: " + bonus);
+        System.out.println("Текущий баланс: " + currentBalance);
     }
 }
